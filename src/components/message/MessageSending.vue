@@ -34,7 +34,7 @@ export default {
     },
     data() {
         return {
-            message: "Khoa là 1 thằng mập :D",
+            message: "I love you to the moon and back  <3",
             count: 0,
             style: {
                 'background-image': 'linear-gradient(#ff93a5, #ffc3a0)'
