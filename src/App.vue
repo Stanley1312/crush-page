@@ -19,10 +19,10 @@
     </div>
     <div v-if="showTitle" class="app-button-wrapper">
       <div class="app-button__yes">
-        <button @click="onIDo">Ok tớ đồng ý</button>
+        <button @click="onIDo">Ok tớ đồng ý &lt;3 </button>
       </div>
       <div @mouseover="changePosition" class="app-button__no">
-        <button>Cậu mơ đi!</button>
+        <button>Cậu mơ đi :33</button>
       </div>
     </div>
     <MessageSending
@@ -75,9 +75,12 @@ export default {
     },
     changePosition() {
       var b = document.querySelector(".app-button__no");
+      console.log(window.screen.height)
+      console.log(window.screen.width)
       if (this.counter < 4) {
-        var i = Math.floor(Math.random() * 700) + 1;
-        var j = Math.floor(Math.random() * 700) + 1;
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 300) + 1;
+        console.log(i, j)
         b.style.display = "block";
         b.style.position = "absolute";
         b.style.left = i + "px";
@@ -127,7 +130,7 @@ export default {
 .image-background {
   height: 100%;
   // filter: blur(3px);
-  background-image: url("./assets/bg_1.png");
+  background-image: url("./assets/mily_image.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -150,6 +153,9 @@ export default {
     top: -400px;
     animation: drop 0.7s ease forwards;
     width: 480px;
+    @media only screen and (max-width: 376px) {
+        width: 300px;
+    }
 
     .app-modal {
       width: 100%;
@@ -167,11 +173,20 @@ export default {
       font-family: "Pacifico";
       font-size: 70px;
       color: rgb(182, 128, 128);
+      
+      @media only screen and (max-width: 376px) {
+        font-size: 45px;
+        text-align: center;
+      }
     }
     .app-title--small {
       font-family: "Pacifico";
       font-size: 23px;
       color: rgb(182, 128, 128);
+      @media only screen and (max-width: 376px) {
+        font-size: 18 px;
+        text-align: center;
+      }
     }
   }
   .app-button-wrapper {

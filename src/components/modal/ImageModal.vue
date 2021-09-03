@@ -10,7 +10,7 @@
         <h2>Hee Luu Cậu !</h2>
       </div>
       <div class="hello-modal__content">
-        Tớ có điều này muốn hỏi cậu, cậu trả lời thật lòng nha
+        Tớ có điều này muốn hỏi cậu, cậu trả lời thật lòng nha &#128150; &#128150; &#128150;
       </div>
       <div class="hello-modal__button">
         <button @click.prevent="clickModal">Oke</button>
@@ -51,6 +51,10 @@ export default {
         width: 100%;
         height: 100%;
       }
+      @media only screen and (max-width: 376px) {
+        width: 200px;
+        height: 200px;
+      }
     }
     .hello-modal__title {
       font-weight: bold;
@@ -66,6 +70,9 @@ export default {
       font-size: 20px;
       text-align: center;
       padding: 0px 10px;
+      @media only screen and (max-width: 376px) {
+        font-size: 16px;
+      }
     }
 
     .hello-modal__button {
@@ -84,6 +91,9 @@ export default {
         &:active {
           transform: scale(0.98);
         }
+        @media only screen and (max-width: 376px) {
+        font-size: 14px;
+      }
       }
     }
   }
