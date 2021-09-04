@@ -32,7 +32,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang='scss'>
 .modal-mask {
   position: fixed;
   z-index: 9998;
@@ -50,6 +50,10 @@ export default {
 .modal-wrapper {
   /* display: table-cell;
   vertical-align: middle; */
+  @media only screen and (max-width: 471px) {
+    width: 90%;
+  }
+
 }
 
 .modal-container {

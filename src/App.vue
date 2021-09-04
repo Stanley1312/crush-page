@@ -22,7 +22,7 @@
         <button @click="onIDo">Ok tớ đồng ý &lt;3 </button>
       </div>
       <div @mouseover="changePosition" class="app-button__no">
-        <button>Cậu mơ đi :33</button>
+        <button>Cậu mơ đi :3</button>
       </div>
     </div>
     <MessageSending
@@ -115,6 +115,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$base-color: #f17171;
 %general-button {
   border-radius: 4px;
   padding: 8px;
@@ -127,6 +128,7 @@ export default {
     transform: scale(0.98);
   }
 }
+
 .image-background {
   height: 100%;
   // filter: blur(3px);
@@ -134,6 +136,10 @@ export default {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center; 
+  @media only screen and (max-width: 4) {
+    background-image: url("./assets/anh_co.jpg");
+  } 
 }
 .image-color {
   height: 100%;
@@ -153,7 +159,7 @@ export default {
     top: -400px;
     animation: drop 0.7s ease forwards;
     width: 480px;
-    @media only screen and (max-width: 376px) {
+    @media only screen and (max-width: 471px) {
         width: 300px;
     }
 
@@ -172,9 +178,9 @@ export default {
       display: flex;
       font-family: "Pacifico";
       font-size: 70px;
-      color: rgb(182, 128, 128);
+      color: $base-color;
       
-      @media only screen and (max-width: 376px) {
+      @media only screen and (max-width: 471px) {
         font-size: 45px;
         text-align: center;
       }
@@ -182,9 +188,9 @@ export default {
     .app-title--small {
       font-family: "Pacifico";
       font-size: 23px;
-      color: rgb(182, 128, 128);
-      @media only screen and (max-width: 376px) {
-        font-size: 18 px;
+      color: $base-color;
+      @media only screen and (max-width: 471px) {
+        font-size: 17px;
         text-align: center;
       }
     }
