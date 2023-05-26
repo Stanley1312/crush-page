@@ -1,4 +1,6 @@
-# love-me
+# Crush Pages
+
+You can use this app to flirt to the person you like ❤️ ❤️ ❤️
 
 ## Project setup
 ```
@@ -20,5 +22,3 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
