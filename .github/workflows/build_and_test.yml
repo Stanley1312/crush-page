@@ -5,6 +5,8 @@ on:
     branches: [main]
     types:
       - closed
+env:
+  NODE_OPTIONS: --openssl-legacy-provider
 jobs:
   if_merged:
     
