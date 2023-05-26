@@ -108,7 +108,7 @@ export default {
     },
     onResponseMessage() {
       // this.showResponseModal = false
-      window.location.href='https://www.instagram.com/dangkhoa1312/';
+      window.location.href='https://www.instagram.com/__khoa_thd/';
     }
   },
 };
@@ -132,7 +132,7 @@ $base-color: #f17171;
 .image-background {
   height: 100%;
   // filter: blur(3px);
-  background-image: url("./assets/mily_image.jpg");
+  background-image: url("./assets/bg_1.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -7,11 +7,11 @@
         </template>
         <template v-slot:body>
             <div class="message__body">
-                HiHi, Hello cô nak &#128536;, hmmm thật ra thì lâu ni dịch quá hăm gặp cô được, cũng chả đi đâu được nên cũng ít tâm sự với cô được,
+                <!-- HiHi, Hello cô nak &#128536;, hmmm thật ra thì lâu ni dịch quá hăm gặp cô được, cũng chả đi đâu được nên cũng ít tâm sự với cô được,
                 em làm cái này vì muốn làm gì đó chọc cho cô vui tí thui nak, với lại cho cô thấy dân IT tỏ tính thì như răn hen haha, mấy cái câu nớ
                 cô đừng để ý cũng được haha, em như răn với cô thì cô cũng biết rùi mà hì hehe, bây giờ chỉ làm bạn cô như ri cũng vui rùi, 
-                chỉ luôn mong cô luôn luôn vui vẻ và hạnh phúc nhá, Cô có gì muốn nói thì click vào hính trái tim bên dưới nha hehe. Pai Pai cô nak &#128541;
-
+                chỉ luôn mong cô luôn luôn vui vẻ và hạnh phúc nhá, Cô có gì muốn nói thì click vào hính trái tim bên dưới nha hehe. Pai Pai cô nak &#128541; -->
+                Hé lô hơ sờ ly ly &lt;3 &lt;3 &lt;3
             </div>
         </template>
         <template v-slot:footer>
