@@ -5,16 +5,18 @@ on:
 #     branches: "**"
 #     types:
 #       - closed
+  
   push:
       branches:
-        - '**'
+        - "**"
+    
 # env:
 #   NODE_OPTIONS: --openssl-legacy-provider
 
 jobs:  
   build:
     runs-on: ubuntu-latest
-    if: ${{ vars.AUTO_RUN_CICD == 'true'}}
+    if: vars.AUTO_RUN_CICD == 'false'
     steps:
     - name: Echo current env
       run: |
