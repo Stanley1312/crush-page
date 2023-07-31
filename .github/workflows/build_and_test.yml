@@ -1,12 +1,19 @@
 name: Demo CI/CD on Vuejs App
 
 on:
-  pull_request:
-    branches: [main]
-    types:
-      - closed
+#   pull_request:
+#     branches: "**"
+#     types:
+#       - closed
+  push:
+      branches:
+        - '**'
 # env:
 #   NODE_OPTIONS: --openssl-legacy-provider
+
+env:
+  RUN_ON_ALL_BRANCHES: false
+
 jobs:
   if_merged:
     
