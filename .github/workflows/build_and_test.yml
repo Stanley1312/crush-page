@@ -10,6 +10,10 @@ on:
       branches:
         - "**"
   workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Deploy to production environment'
+        required: true
     
 # env:
 #   NODE_OPTIONS: --openssl-legacy-provider
@@ -17,7 +21,7 @@ on:
 jobs:  
   build:
     runs-on: ubuntu-latest
-    if: vars.AUTO_RUN_CICD == 'false'
+#     if: vars.AUTO_RUN_CICD == 'false'
     steps:
     - name: Echo current env
       run: |
