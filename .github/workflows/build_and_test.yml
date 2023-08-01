@@ -16,10 +16,14 @@ jobs:
     
 #     if:  github.event.pull_request.merged == true 
   build:
-    if: vars.AUTO_RUN_CICD == 'false'
+#     if: vars.AUTO_RUN_CICD == 'false'
     runs-on: ubuntu-latest
 
     steps:
+    - name: Print branch name
+      run: |
+        echo "Branch name: ${{ github.event.inputs.branch }}"
+      
     - name: Echo current branch
       run: |
         echo ${{ github.ref }}
