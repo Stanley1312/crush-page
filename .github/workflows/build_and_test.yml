@@ -1,16 +1,22 @@
 name: Demo CI/CD on Vuejs App
 
+# on:
+#   pull_request:
+#     branches: [main]
+#     types:
+#       - closed
+
 on:
-  pull_request:
-    branches: [main]
-    types:
-      - closed
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
 # env:
 #   NODE_OPTIONS: --openssl-legacy-provider
 jobs:
-  if_merged:
+#   if_merged:
     
-    if:  github.event.pull_request.merged == true 
+#     if:  github.event.pull_request.merged == true 
     runs-on: ubuntu-latest
     
     steps:
